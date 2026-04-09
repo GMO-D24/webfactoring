@@ -1,0 +1,67 @@
+{
+  "main": [
+    {
+      "name": "Servicios",
+      "url": "/"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+   
+    {
+      "name": "Contacto",
+      "url": "/contact"
+    },
+    {
+      "name": "Preguntas Frecuentes",
+      "url": "/faq"
+    },
+    {
+      "name": "",
+      "url": ""
+    }
+  ],
+  "footer": [
+    {
+      "name": "Ace Factoring",
+      "menu": [
+        
+      ]
+    },
+    {
+      "name": "Servicios",
+      "menu": [
+        {
+          "text": "Factoring",
+          "url": "#"
+        },
+        {
+          "text": "Confirming",
+          "url": "#"
+        },
+        {
+          "text": "Pronto pago",
+          "url": "/pricing"
+        }
+      ]
+    },
+    {
+      "name": "Soporte",
+      "menu": [
+        {
+          "text": "Preguntas Frecuentes",
+          "url": "/faq"
+        },
+        {
+          "text": "Politica de privacidad",
+          "url": "/privacy-policy"
+        },
+        {
+          "text": "Terminos y condiciones",
+          "url": "/terms-conditions"
+        }
+      ]
+    }
+  ]
+}
