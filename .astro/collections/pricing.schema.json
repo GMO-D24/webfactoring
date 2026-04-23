@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "draft": {
+      "type": "boolean"
+    },
+    "plans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "subtitle": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "type": {
+            "type": "string"
+          },
+          "recommended": {
+            "type": "boolean"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "button": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "link": {
+                "default": "/contact",
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "link"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "title",
+          "price",
+          "type",
+          "features",
+          "button"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "call_to_action": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "button": {
+          "type": "object",
+          "properties": {
+            "enable": {
+              "default": true,
+              "type": "boolean"
+            },
+            "label": {
+              "type": "string"
+            },
+            "link": {
+              "default": "/contact",
+              "type": "string"
+            }
+          },
+          "required": [
+            "enable",
+            "label",
+            "link"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "title",
+        "content",
+        "image"
+      ],
+      "additionalProperties": false
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "draft"
+  ],
+  "additionalProperties": false
+}
